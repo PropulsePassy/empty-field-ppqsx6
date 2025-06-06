@@ -30,7 +30,7 @@ const FormulaireMEP = () => {
         (select.value.toLowerCase() === "oui" ||
           select.value.toLowerCase() === "na")
       ) {
-        total += 20;
+        total += 30;
       }
       if (
         select.name === "planRollback" &&
@@ -104,7 +104,7 @@ const FormulaireMEP = () => {
       }
     });
 
-    setSomme(Math.round(total / 3.72222222 + 5));
+    setSomme(Math.round(total / 3.8333333 + 5));
   };
 
   return (
