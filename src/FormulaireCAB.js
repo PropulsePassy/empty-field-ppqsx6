@@ -169,11 +169,7 @@ const FormulaireMEP = () => {
               </td>
 
               <td>
-                <input
-                  type="text"
-                  defaultValue="Commentaire"
-                  style={inputStyle}
-                />
+                <input type="text" style={inputStyle} />
               </td>
             </tr>
             <tr>
@@ -191,11 +187,7 @@ const FormulaireMEP = () => {
                 />
               </td>
               <td>
-                <input
-                  type="text"
-                  defaultValue="Commentaire"
-                  style={inputStyle}
-                />
+                <input type="text" style={inputStyle} />
               </td>
             </tr>
 
@@ -225,11 +217,7 @@ const FormulaireMEP = () => {
                 />
               </td>
               <td>
-                <input
-                  type="text"
-                  defaultValue="Commentaire"
-                  style={inputStyle}
-                />
+                <input type="text" style={inputStyle} />
               </td>
             </tr>
             <tr>
@@ -247,11 +235,7 @@ const FormulaireMEP = () => {
                 />{" "}
               </td>
               <td>
-                <input
-                  type="text"
-                  defaultValue="Commentaire"
-                  style={inputStyle}
-                />
+                <input type="text" style={inputStyle} />
               </td>
             </tr>
             <tr>
@@ -269,11 +253,7 @@ const FormulaireMEP = () => {
                 />{" "}
               </td>
               <td>
-                <input
-                  type="text"
-                  defaultValue="Commentaire"
-                  style={inputStyle}
-                />
+                <input type="text" style={inputStyle} />
               </td>
             </tr>
             <tr>
@@ -291,11 +271,7 @@ const FormulaireMEP = () => {
                 />{" "}
               </td>
               <td>
-                <input
-                  type="text"
-                  defaultValue="Commentaire"
-                  style={inputStyle}
-                />
+                <input type="text" style={inputStyle} />
               </td>
             </tr>
             <tr>
@@ -313,11 +289,7 @@ const FormulaireMEP = () => {
                 />{" "}
               </td>
               <td>
-                <input
-                  type="text"
-                  defaultValue="Commentaire"
-                  style={inputStyle}
-                />
+                <input type="text" style={inputStyle} />
               </td>
             </tr>
 
@@ -337,11 +309,7 @@ const FormulaireMEP = () => {
                 </select>{" "}
               </td>
               <td>
-                <input
-                  type="text"
-                  defaultValue="Commentaire"
-                  style={inputStyle}
-                />
+                <input type="text" style={inputStyle} />
               </td>
             </tr>
 
@@ -361,11 +329,7 @@ const FormulaireMEP = () => {
                 </select>{" "}
               </td>
               <td>
-                <input
-                  type="text"
-                  defaultValue="Commentaire"
-                  style={inputStyle}
-                />
+                <input type="text" style={inputStyle} />
               </td>
             </tr>
             <tr>
@@ -383,11 +347,7 @@ const FormulaireMEP = () => {
                 </select>{" "}
               </td>
               <td>
-                <input
-                  type="text"
-                  defaultValue="Commentaire"
-                  style={inputStyle}
-                />
+                <input type="text" style={inputStyle} />
               </td>
             </tr>
 
@@ -407,11 +367,7 @@ const FormulaireMEP = () => {
                 </select>
               </td>
               <td>
-                <input
-                  type="text"
-                  defaultValue="Commentaire"
-                  style={inputStyle}
-                />
+                <input type="text" style={inputStyle} />
               </td>
             </tr>
 
@@ -431,11 +387,7 @@ const FormulaireMEP = () => {
                 </select>
               </td>
               <td>
-                <input
-                  type="text"
-                  defaultValue="Commentaire"
-                  style={inputStyle}
-                />
+                <input type="text" style={inputStyle} />
               </td>
             </tr>
 
@@ -454,11 +406,7 @@ const FormulaireMEP = () => {
                 </select>
               </td>
               <td>
-                <input
-                  type="text"
-                  defaultValue="Commentaire"
-                  style={inputStyle}
-                />
+                <input type="text" style={inputStyle} />
               </td>
             </tr>
 
@@ -477,11 +425,7 @@ const FormulaireMEP = () => {
                 </select>
               </td>
               <td>
-                <input
-                  type="text"
-                  defaultValue="Commentaire"
-                  style={inputStyle}
-                />
+                <input type="text" style={inputStyle} />
               </td>
             </tr>
             <tr>
@@ -499,11 +443,7 @@ const FormulaireMEP = () => {
                 </select>
               </td>
               <td>
-                <input
-                  type="text"
-                  defaultValue="Commentaire"
-                  style={inputStyle}
-                />
+                <input type="text" style={inputStyle} />
               </td>
             </tr>
 
@@ -523,11 +463,7 @@ const FormulaireMEP = () => {
                 </select>
               </td>
               <td>
-                <input
-                  type="text"
-                  defaultValue="Commentaire"
-                  style={inputStyle}
-                />
+                <input type="text" style={inputStyle} />
               </td>
             </tr>
 
@@ -547,11 +483,7 @@ const FormulaireMEP = () => {
                 </select>{" "}
               </td>
               <td>
-                <input
-                  type="text"
-                  defaultValue="Commentaire"
-                  style={inputStyle}
-                />
+                <input type="text" style={inputStyle} />
               </td>
             </tr>
           </tbody>
