@@ -9,7 +9,7 @@ const inputStyle = {
 
 const FormulaireMEP = () => {
   const formRef = useRef(null);
-  const [somme, setSomme] = useState(null);
+  const [somme, setSomme] = useState(0);
 
   const calculerSomme = () => {
     const inputs = formRef.current.querySelectorAll("input");
@@ -42,11 +42,23 @@ const FormulaireMEP = () => {
         total += 40;
       }
       if (
+        select.name === "planPP" &&
+        select.value.toLowerCase() === "partiel"
+      ) {
+        total += 20;
+      }
+      if (
         select.name === "controleMEP" &&
         (select.value.toLowerCase() === "oui" ||
           select.value.toLowerCase() === "na")
       ) {
         total += 20;
+      }
+      if (
+        select.name === "controleMEP" &&
+        select.value.toLowerCase() === "partiel"
+      ) {
+        total += 10;
       }
       if (
         select.name === "RGPD" &&
@@ -92,12 +104,38 @@ const FormulaireMEP = () => {
       }
     });
 
-    setSomme(Math.round(total / 3.72222222 + 5) + "%");
+    setSomme(Math.round(total / 3.72222222 + 5));
   };
 
   return (
     <div style={{ overflowX: "auto", padding: "1rem" }}>
       <div ref={formRef}>
+        <div style={{ marginBottom: "1rem" }}>
+          <div
+            style={{
+              backgroundColor: "#e0e0e0",
+              height: "20px",
+              width: "100%",
+              borderRadius: "5px",
+              overflow: "hidden",
+            }}
+          >
+            <div
+              style={{
+                backgroundColor: "#4caf50",
+                height: "100%",
+                width: `${somme}%`,
+                transition: "width 0.3s",
+              }}
+            />
+          </div>
+          <div
+            style={{ marginTop: "5px", textAlign: "right", fontWeight: "bold" }}
+          >
+            {Math.round(somme)}%
+          </div>
+        </div>
+
         <table
           border="1"
           cellPadding="5"
@@ -457,6 +495,7 @@ const FormulaireMEP = () => {
                 >
                   <option value="oui">Oui</option>
                   <option value="non">Non</option>
+                  <option value="partiel">Partiel</option>
                 </select>
               </td>
               <td>
@@ -480,6 +519,7 @@ const FormulaireMEP = () => {
                 >
                   <option value="oui">Oui</option>
                   <option value="non">Non</option>
+                  <option value="partiel">Partiel</option>
                 </select>
               </td>
               <td>
@@ -521,7 +561,7 @@ const FormulaireMEP = () => {
       <div style={{ marginTop: "1rem" }}>
         {somme !== null && (
           <div style={{ marginTop: "0.5rem" }}>
-            <strong>Probabilité de succès de la MEP :</strong> {somme}
+            <strong>Probabilité de succès de la MEP :</strong> {somme}%
           </div>
         )}
       </div>
