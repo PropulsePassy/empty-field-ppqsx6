@@ -9,7 +9,7 @@ const inputStyle = {
 
 const FormulaireMEP = () => {
   const formRef = useRef(null);
-  const [somme, setSomme] = useState(0);
+  const [somme, setSomme] = useState(5);
 
   const calculerSomme = () => {
     const inputs = formRef.current.querySelectorAll("input");
@@ -72,7 +72,7 @@ const FormulaireMEP = () => {
         (select.value.toLowerCase() === "oui" ||
           select.value.toLowerCase() === "na")
       ) {
-        total += 10;
+        total += 5;
       }
       if (
         select.name === "mailPendantMail" &&
@@ -104,7 +104,7 @@ const FormulaireMEP = () => {
       }
     });
 
-    setSomme(Math.round(total / 3.8333333 + 5));
+    setSomme(Math.round(total / 3.7777778 + 5));
   };
 
   return (
@@ -489,7 +489,6 @@ const FormulaireMEP = () => {
           </tbody>
         </table>
       </div>
-
       <div style={{ marginTop: "1rem" }}>
         {somme !== null && (
           <div style={{ marginTop: "0.5rem" }}>
