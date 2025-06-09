@@ -42,6 +42,12 @@ const FormulaireMEP = () => {
       ) {
         total += 40;
       }
+      if (
+        select.name === "planRollback" &&
+        select.value.toLowerCase() === "partiel"
+      ) {
+        total += 20;
+      }
       if (select.name === "planPP" && select.value.toLowerCase() === "oui") {
         total += 40;
       }
@@ -105,6 +111,12 @@ const FormulaireMEP = () => {
           select.value.toLowerCase() === "na")
       ) {
         total += 20;
+      }
+      if (
+        select.name === "supportDepl" &&
+        select.value.toLowerCase() === "partiel"
+      ) {
+        total += 10;
       }
     });
 
@@ -391,6 +403,7 @@ const FormulaireMEP = () => {
                 >
                   <option value="oui">Oui</option>
                   <option value="non">Non</option>
+                  <option value="partiel">Partiel</option>
                 </select>
               </td>
               <td>
@@ -411,6 +424,7 @@ const FormulaireMEP = () => {
                 >
                   <option value="oui">Oui</option>
                   <option value="non">Non</option>
+                  <option value="partiel">Partiel</option>
                 </select>
               </td>
               <td>
