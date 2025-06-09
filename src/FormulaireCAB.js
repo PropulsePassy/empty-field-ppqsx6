@@ -20,7 +20,11 @@ const FormulaireMEP = () => {
       const val = input.value.trim();
       const num = parseFloat(val);
       if (!isNaN(num)) {
-        total += (num * 20) / 100;
+        if (input.name === "specs") {
+          total += (num * 30) / 100;
+        } else {
+          total += (num * 20) / 100;
+        }
       }
     });
 
@@ -104,7 +108,7 @@ const FormulaireMEP = () => {
       }
     });
 
-    setSomme(Math.round(total / 3.7777778 + 5));
+    setSomme(Math.round(total / 3.8888888 + 5));
   };
 
   return (
@@ -189,6 +193,7 @@ const FormulaireMEP = () => {
               <td>
                 <input type="text" style={inputStyle} />
               </td>
+              <td>30</td>
             </tr>
 
             <tr>
@@ -219,6 +224,7 @@ const FormulaireMEP = () => {
               <td>
                 <input type="text" style={inputStyle} />
               </td>
+              <td>20</td>
             </tr>
             <tr>
               <td>% Exécution scénarios</td>
@@ -237,6 +243,7 @@ const FormulaireMEP = () => {
               <td>
                 <input type="text" style={inputStyle} />
               </td>
+              <td>20</td>
             </tr>
             <tr>
               <td>% Preuves exécution</td>
@@ -255,6 +262,7 @@ const FormulaireMEP = () => {
               <td>
                 <input type="text" style={inputStyle} />
               </td>
+              <td>20</td>
             </tr>
             <tr>
               <td>% Exécution TNR</td>
@@ -273,6 +281,7 @@ const FormulaireMEP = () => {
               <td>
                 <input type="text" style={inputStyle} />
               </td>
+              <td>20</td>
             </tr>
             <tr>
               <td>% Preuves TNR</td>
@@ -291,6 +300,7 @@ const FormulaireMEP = () => {
               <td>
                 <input type="text" style={inputStyle} />
               </td>
+              <td>20</td>
             </tr>
 
             <tr>
@@ -311,6 +321,7 @@ const FormulaireMEP = () => {
               <td>
                 <input type="text" style={inputStyle} />
               </td>
+              <td>30</td>
             </tr>
 
             <tr>
@@ -331,6 +342,7 @@ const FormulaireMEP = () => {
               <td>
                 <input type="text" style={inputStyle} />
               </td>
+              <td>5</td>
             </tr>
             <tr>
               <td>Pendant MEP</td>
@@ -349,6 +361,7 @@ const FormulaireMEP = () => {
               <td>
                 <input type="text" style={inputStyle} />
               </td>
+              <td>5</td>
             </tr>
 
             <tr>
@@ -369,6 +382,7 @@ const FormulaireMEP = () => {
               <td>
                 <input type="text" style={inputStyle} />
               </td>
+              <td>20</td>
             </tr>
 
             <tr>
@@ -389,6 +403,7 @@ const FormulaireMEP = () => {
               <td>
                 <input type="text" style={inputStyle} />
               </td>
+              <td>20</td>
             </tr>
 
             <tr>
@@ -408,6 +423,7 @@ const FormulaireMEP = () => {
               <td>
                 <input type="text" style={inputStyle} />
               </td>
+              <td>20</td>
             </tr>
 
             <tr>
@@ -427,6 +443,7 @@ const FormulaireMEP = () => {
               <td>
                 <input type="text" style={inputStyle} />
               </td>
+              <td>40</td>
             </tr>
             <tr>
               <td>Exécuté PP</td>
@@ -445,6 +462,7 @@ const FormulaireMEP = () => {
               <td>
                 <input type="text" style={inputStyle} />
               </td>
+              <td>40</td>
             </tr>
 
             <tr>
