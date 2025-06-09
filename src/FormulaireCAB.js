@@ -109,7 +109,6 @@ const FormulaireMEP = () => {
 
   return (
     <div style={{ overflowX: "auto", padding: "1rem" }}>
-      <div>Probabilité de réussite de la MEP</div>
       <div ref={formRef}>
         <div style={{ marginBottom: "1rem" }}>
           <div
