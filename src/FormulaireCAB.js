@@ -153,30 +153,16 @@ const FormulaireMEP = () => {
           </colgroup>
           <thead style={{ backgroundColor: "#d9edf7", textAlign: "center" }}>
             <tr>
-              <th rowSpan="2">Rubrique</th>
-              <th colSpan="2">Périmètre MEP</th>
-              <th rowSpan="2">Commentaires</th>
-            </tr>
-            <tr>
-              <th>Total</th>
-              <th>Evol / bugs</th>
+              <th>Rubrique</th>
+              <th>Intitulé</th>
+              <th>Valeur</th>
+              <th>Commentaire</th>
+              <th>Poids</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td rowSpan={"2"}>Evolutions</td>
-              <td>
-                <input type="text" style={inputStyle} />
-              </td>
-              <td>
-                <input type="text" style={inputStyle} />
-              </td>
-
-              <td>
-                <input type="text" style={inputStyle} />
-              </td>
-            </tr>
-            <tr>
+              <td>Spécifications</td>
               <td>% Spécifications</td>
               <td>
                 <input
@@ -190,21 +176,12 @@ const FormulaireMEP = () => {
                   style={inputStyle}
                 />
               </td>
-              <td>
-                <input type="text" style={inputStyle} />
-              </td>
+              <td>% Spécifications fonctionnelles et techniques rédigées.</td>
               <td>30</td>
             </tr>
 
             <tr>
               <td rowSpan="6">Tests</td>
-              <td style={{ backgroundColor: "#d9edf7", textAlign: "center" }}>
-                Intitulé
-              </td>
-              <td style={{ backgroundColor: "#d9edf7", textAlign: "center" }}>
-                Valeur
-              </td>
-              <td></td>
             </tr>
 
             <tr>
@@ -222,7 +199,7 @@ const FormulaireMEP = () => {
                 />
               </td>
               <td>
-                <input type="text" style={inputStyle} />
+                % Couverture des tests définis pour les évolutions concernées.
               </td>
               <td>20</td>
             </tr>
@@ -240,9 +217,7 @@ const FormulaireMEP = () => {
                   style={inputStyle}
                 />{" "}
               </td>
-              <td>
-                <input type="text" style={inputStyle} />
-              </td>
+              <td>% Scénarios exécutés pour les évolutions concernées.</td>
               <td>20</td>
             </tr>
             <tr>
@@ -260,7 +235,7 @@ const FormulaireMEP = () => {
                 />{" "}
               </td>
               <td>
-                <input type="text" style={inputStyle} />
+                % Preuves des tests effectués pour les évolutions concernées.
               </td>
               <td>20</td>
             </tr>
@@ -278,9 +253,7 @@ const FormulaireMEP = () => {
                   style={inputStyle}
                 />{" "}
               </td>
-              <td>
-                <input type="text" style={inputStyle} />
-              </td>
+              <td>% TNR exécutés</td>
               <td>20</td>
             </tr>
             <tr>
@@ -297,9 +270,7 @@ const FormulaireMEP = () => {
                   style={inputStyle}
                 />{" "}
               </td>
-              <td>
-                <input type="text" style={inputStyle} />
-              </td>
+              <td>% Preuves disponibles pour les TNR exécutés.</td>
               <td>20</td>
             </tr>
 
@@ -319,7 +290,8 @@ const FormulaireMEP = () => {
                 </select>{" "}
               </td>
               <td>
-                <input type="text" style={inputStyle} />
+                Indiquer si le métier a effectué ses propres tests (TNR +
+                évolutions) et validé la mise en production.
               </td>
               <td>30</td>
             </tr>
@@ -340,7 +312,8 @@ const FormulaireMEP = () => {
                 </select>{" "}
               </td>
               <td>
-                <input type="text" style={inputStyle} />
+                Indiquer si un mail va être envoyé aux métiers pour informer sur
+                la MEP.
               </td>
               <td>5</td>
             </tr>
@@ -359,7 +332,7 @@ const FormulaireMEP = () => {
                 </select>{" "}
               </td>
               <td>
-                <input type="text" style={inputStyle} />
+                Indiquer si un ou plusieurs mails seront envoyés durant la MEP.
               </td>
               <td>5</td>
             </tr>
@@ -483,6 +456,7 @@ const FormulaireMEP = () => {
               <td>
                 <input type="text" style={inputStyle} />
               </td>
+              <td>20</td>
             </tr>
 
             <tr>
@@ -503,6 +477,7 @@ const FormulaireMEP = () => {
               <td>
                 <input type="text" style={inputStyle} />
               </td>
+              <td>20</td>
             </tr>
           </tbody>
         </table>
