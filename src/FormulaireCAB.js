@@ -188,7 +188,14 @@ const FormulaireMEP = () => {
                   style={inputStyle}
                 />
               </td>
-              <td>% Spécifications fonctionnelles et techniques rédigées.</td>
+              <td>
+                <input
+                  type="text"
+                  name="te_specs"
+                  defaultValue="% Spécifications fonctionnelles et techniques rédigées."
+                  style={inputStyle}
+                />
+              </td>
               <td>30</td>
             </tr>
 
@@ -211,7 +218,12 @@ const FormulaireMEP = () => {
                 />
               </td>
               <td>
-                % Couverture des tests définis pour les évolutions concernées.
+                <input
+                  type="text"
+                  name="te_specs"
+                  defaultValue="% Couverture des tests définis pour les évolutions concernées."
+                  style={inputStyle}
+                />
               </td>
               <td>20</td>
             </tr>
@@ -229,7 +241,14 @@ const FormulaireMEP = () => {
                   style={inputStyle}
                 />{" "}
               </td>
-              <td>% Scénarios exécutés pour les évolutions concernées.</td>
+              <td>
+                <input
+                  type="text"
+                  name="te_specs"
+                  defaultValue="% Couverture des tests définis pour les évolutions concernées."
+                  style={inputStyle}
+                />
+              </td>
               <td>20</td>
             </tr>
             <tr>
@@ -247,7 +266,12 @@ const FormulaireMEP = () => {
                 />{" "}
               </td>
               <td>
-                % Preuves des tests effectués pour les évolutions concernées.
+                <input
+                  type="text"
+                  name="te_specs"
+                  defaultValue="% Couverture des tests définis pour les évolutions concernées."
+                  style={inputStyle}
+                />
               </td>
               <td>20</td>
             </tr>
@@ -265,7 +289,14 @@ const FormulaireMEP = () => {
                   style={inputStyle}
                 />{" "}
               </td>
-              <td>% TNR exécutés</td>
+              <td>
+                <input
+                  type="text"
+                  name="te_specs"
+                  defaultValue="% TNR exécutés"
+                  style={inputStyle}
+                />
+              </td>
               <td>20</td>
             </tr>
             <tr>
@@ -282,7 +313,14 @@ const FormulaireMEP = () => {
                   style={inputStyle}
                 />{" "}
               </td>
-              <td>% Preuves disponibles pour les TNR exécutés.</td>
+              <td>
+                <input
+                  type="text"
+                  name="te_specs"
+                  defaultValue="% Preuves disponibles pour les TNR exécutés."
+                  style={inputStyle}
+                />
+              </td>
               <td>20</td>
             </tr>
 
@@ -302,8 +340,12 @@ const FormulaireMEP = () => {
                 </select>{" "}
               </td>
               <td>
-                Indiquer si le métier a effectué ses propres tests (TNR +
-                évolutions) et validé la mise en production.
+                <input
+                  type="text"
+                  name="te_specs"
+                  defaultValue="Indiquer si le métier a effectué ses propres tests (TNR + évolutions) et validé la mise en production."
+                  style={inputStyle}
+                />
               </td>
               <td>30</td>
             </tr>
@@ -324,8 +366,12 @@ const FormulaireMEP = () => {
                 </select>{" "}
               </td>
               <td>
-                Indiquer si un mail va être envoyé aux métiers pour informer sur
-                la MEP.
+                <input
+                  type="text"
+                  name="te_specs"
+                  defaultValue="Indiquer si un mail va être envoyé aux métiers pour informer sur la MEP."
+                  style={inputStyle}
+                />
               </td>
               <td>5</td>
             </tr>
@@ -344,7 +390,12 @@ const FormulaireMEP = () => {
                 </select>{" "}
               </td>
               <td>
-                Indiquer si un ou plusieurs mails seront envoyés durant la MEP.
+                <input
+                  type="text"
+                  name="te_specs"
+                  defaultValue="Indiquer si un ou plusieurs mails seront envoyés durant la MEP."
+                  style={inputStyle}
+                />
               </td>
               <td>5</td>
             </tr>
