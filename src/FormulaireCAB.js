@@ -7,6 +7,15 @@ const inputStyle = {
   width: "100%",
 };
 
+const inputStyleArea = {
+  border: "none",
+  backgroundColor: "transparent",
+  outline: "none",
+  width: "100%",
+  resize: "none",
+  overflow: "hidden",
+};
+
 const FormulaireMEP = () => {
   const formRef = useRef(null);
   const [somme, setSomme] = useState(5);
@@ -239,7 +248,7 @@ const FormulaireMEP = () => {
                   defaultValue="0"
                   onChange={calculerSomme}
                   style={inputStyle}
-                />{" "}
+                />
               </td>
               <td>
                 <input
@@ -263,13 +272,13 @@ const FormulaireMEP = () => {
                   defaultValue="0"
                   onChange={calculerSomme}
                   style={inputStyle}
-                />{" "}
+                />
               </td>
               <td>
                 <input
                   type="text"
                   name="te_specs"
-                  defaultValue="% Couverture des tests définis pour les évolutions concernées."
+                  defaultValue="% Couverture des tests exécutés pour les évolutions concernées."
                   style={inputStyle}
                 />
               </td>
@@ -287,7 +296,7 @@ const FormulaireMEP = () => {
                   defaultValue="0"
                   onChange={calculerSomme}
                   style={inputStyle}
-                />{" "}
+                />
               </td>
               <td>
                 <input
@@ -311,7 +320,7 @@ const FormulaireMEP = () => {
                   defaultValue="0"
                   onChange={calculerSomme}
                   style={inputStyle}
-                />{" "}
+                />
               </td>
               <td>
                 <input
@@ -337,7 +346,7 @@ const FormulaireMEP = () => {
                   <option value="oui">Oui</option>
                   <option value="non">Non</option>
                   <option value="na">N/A</option>
-                </select>{" "}
+                </select>
               </td>
               <td>
                 <input
@@ -363,7 +372,7 @@ const FormulaireMEP = () => {
                   <option value="oui">Oui</option>
                   <option value="non">Non</option>
                   <option value="na">N/A</option>
-                </select>{" "}
+                </select>
               </td>
               <td>
                 <input
@@ -387,7 +396,7 @@ const FormulaireMEP = () => {
                   <option value="oui">Oui</option>
                   <option value="non">Non</option>
                   <option value="na">N/A</option>
-                </select>{" "}
+                </select>
               </td>
               <td>
                 <input
@@ -543,6 +552,33 @@ const FormulaireMEP = () => {
                 <input type="text" style={inputStyle} />
               </td>
               <td>20</td>
+            </tr>
+
+            <tr>
+              <td>Dépendance flux</td>
+              <td />
+              <td>
+                <select
+                  style={inputStyle}
+                  defaultValue="non"
+                  onChange={calculerSomme}
+                  name="RGPD"
+                >
+                  <option value="oui">Oui</option>
+                  <option value="non">Non</option>
+                  <option value="na">N/A</option>
+                </select>{" "}
+              </td>
+              <td>
+                <input
+                  type="text"
+                  style={inputStyle}
+                  defaultValue={
+                    "Y a-t-il une stratégie de dépendance à des flux à déployer ?"
+                  }
+                />
+              </td>
+              <td>0</td>
             </tr>
           </tbody>
         </table>
