@@ -558,12 +558,7 @@ const FormulaireMEP = () => {
               <td>Dépendance flux</td>
               <td />
               <td>
-                <select
-                  style={inputStyle}
-                  defaultValue="non"
-                  onChange={calculerSomme}
-                  name="RGPD"
-                >
+                <select style={inputStyle} defaultValue="non" name="FLUX">
                   <option value="oui">Oui</option>
                   <option value="non">Non</option>
                   <option value="na">N/A</option>
