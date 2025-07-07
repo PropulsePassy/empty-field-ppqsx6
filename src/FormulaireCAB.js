@@ -568,9 +568,7 @@ const FormulaireMEP = () => {
                 <input
                   type="text"
                   style={inputStyle}
-                  defaultValue={
-                    "Y a-t-il une stratégie de dépendance à des flux à déployer ?"
-                  }
+                  defaultValue={"Y a-t-il une dépendance à des flux ?"}
                 />
               </td>
               <td>0</td>
